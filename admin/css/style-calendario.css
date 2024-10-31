@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+
+
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    padding-top: 50px;
+    font-weight: 900;
+}
+
+:root {
+    --color-bg-calendar: #030c15;
+    --color-cell: #e3e3e3;
+    --color-cell-disabled: #424649;
+}
+
+.root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar {
+    padding: 20px 10px;
+    background-color: var(--color-bg-calendar);
+    border-radius: 3px;
+    width: 100%;
+    max-width: 90%;
+    height: 500px;
+    font-family: sans-serif;
+    margin: 50px 20px;
+}
+
+.calendar__header {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.calendar .control {
+    color: rgba(255, 255, 255, 0.587);
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.grid__header, .grid__body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.grid__header {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.grid__body {
+    grid-auto-rows: 65px;
+    color: var(--color-cell);
+}
+
+.grid__cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid__cell--gd {
+    cursor: pointer;
+}
+
+.grid__cell--selected {
+    color: var(--color-bg-calendar);
+    background-color: white;
+    border-radius: 10%;
+    border: 2px solid white;
+    box-shadow: 0 0 0 2px var(--color-bg-calendar) inset;
+}
+
+.grid__cell--disabled {
+    color: var(--color-cell-disabled);
+    cursor: not-allowed;
+}
+
+.sub{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 80px;
+}
+
+.contenedor-cabs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.cab{
+    text-align: center;
+    width: 450px;
+    height: 250px;
+    justify-content: center;
+}
+.cab img{
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}

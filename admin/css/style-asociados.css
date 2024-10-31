@@ -1,0 +1,53 @@
+.contenedor-divs {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    gap: 30px; /* Espacio entre elementos */
+    max-width: 100%; /* Ancho máximo del contenedor */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px; /* Padding para que no toque los bordes */
+}
+
+.n-div {
+    flex: 0 0 300px; /* No crecer, no encoger, base de 300px */
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.n-asociado {
+    width: 300px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 1s;
+    margin-bottom: 20px;
+}
+
+.n-asociado:hover {
+    transform: scale(1.05);
+    box-shadow: #5e5e5e 10px 10px;
+}
+
+.n-div h2, 
+.n-div h3, 
+.n-div p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.parrafo{
+    text-align: center;
+}

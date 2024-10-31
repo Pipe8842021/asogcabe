@@ -1,0 +1,43 @@
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.instagram{
+    background: rgb(0,90,255);
+    background: linear-gradient(150deg, rgba(0,90,255,1) 1%, rgba(184,0,255,1) 24%, rgba(255,0,145,1) 55%, rgba(250,215,4,1) 90%);
+    padding: 20px;
+    border-radius: 5%;
+}
+.gmail{
+    background-color:#dd2b2b;
+    padding: 20px;
+    border-radius: 5%;
+}
+.facebook{
+    background-color:#3b5998;
+    padding: 20px;
+    border-radius: 5%;
+}
+.whatsapp{
+    background-color:#00bb2d;
+    padding: 20px;
+    border-radius: 5%;
+}
+.card p{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+
